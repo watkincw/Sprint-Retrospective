@@ -1,0 +1,36 @@
+* {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+}
+
+body {
+    background-color: grey;
+}
+
+table {
+    background-color: antiquewhite;
+}
+
+.tableCap {
+    font-variant: small-caps;
+    font-size: 2em;
+    text-shadow: 2px 2px 5px red;
+}
+
+input {
+    width: 75px;
+}
+
+.sign {
+    width: 20px;
+}
+
+td {
+    height: 35px;
+    padding: 5px;
+}
+
+.hide {
+    display: none;
+}
