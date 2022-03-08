@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,48 +10,43 @@
 
     <title>Guess the Number!</title>
 </head>
+
 <body>
-    
+
     <!-- Guess The Number! -->
-    <table border="1">
-        <h1 class="tableCap">
-            Guess the Number!
-        </h1>
-
-        <!-- Lucky Number Guess Table -->
-        <tr>
-            <td>
-                <p>
-                    Guess My Lucky Number:
-                </p>
-            </td>
-            <td>
-                <input type="number" id="guessedNumber">
-            </td>
-            <td>
-                <button onclick="checkNumber()">Check</button>
-            </td>
-            <td>
-                Guess Count: <span id="counter">0</span>
-            </td>
-        </tr>
-
-        <!-- Hidden Responses to Guesses -->
-        <div>
+    <div class="container">
+        <div class="tableCap">
+            <h3>
+                Guess the Number!
+            </h3>
+        </div>
+        <div class="hidden-divs">
             <div class="hide" id="hiddenCorrect">
-                <h3>Correct! That is my lucky number!</h3>
+                <h4>Correct! That is my lucky number!</h4>
             </div>
-            
-            <div class="hide" id="hiddenWrong">
-                <h3>Wrong! That is NOT my lucky number!</h3>
+
+            <div class="hide" id="hiddenLow">
+                <h4>Your guess is too Low!</h4>
             </div>
-    
+
+            <div class="hide" id="hiddenHigh">
+                <h4>Your guess is too high!</h4>
+            </div>
+
             <div class="hide" id="hiddenBadNumber">
-                <h3>Please enter a number between 1 and 10</h3>
+                <h4>Please enter a number between 1 and 100.</h4>
             </div>
         </div>
 
-    </table>
-
+        <!-- Lucky Number Guess Table -->
+        <div class="body-container">
+            <h3>I am thinking of a number between 1 and 100.</h3>
+            <h3>Can you guess it?</h3>
+            <input type="number" id="guessedNumber"><br>
+            <button onclick="checkNumber()">GUESS</button>
+            No.of Attempts:<span id="counter"> 0</span>
+        </div>
+    </div>
 </body>
+
 </html>

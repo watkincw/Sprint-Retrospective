@@ -1,36 +1,67 @@
-* {
-    max-width: 500px;
-    margin: auto;
-    text-align: center;
-}
-
 body {
-    background-color: grey;
+  height: 100vh;
+  background-color: rgb(144, 200, 238);
 }
 
-table {
-    background-color: antiquewhite;
+.container {
+  margin: 0 auto;
+  max-width: 500px;
+}
+
+.body-container {
+  background-color: rgb(155, 99, 25);
+  background: rgb(70, 185, 214);
+  padding: 50px 10px;
+  border-radius: 5px;
+  display: grid;
+  justify-items: center;
+  font-family: "poppins", sans-serif;
+}
+
+button {
+  width: 100px;
+  padding: 15px 0;
+  border-radius: 5px;
+  background-color: #192f92;
+  color: #fff;
+  border: none;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 30px;
 }
 
 .tableCap {
-    font-variant: small-caps;
-    font-size: 2em;
-    text-shadow: 2px 2px 5px red;
+  font-variant: small-caps;
+  font-size: 2em;
+  text-align: center;
 }
 
 input {
-    width: 75px;
+  width: 75px;
+  font-weight: 400;
+  padding: 15px 0;
+  font-size: 15px;
+  text-align: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 2px solid #202020;
+  color: #0d0d0e;
 }
 
 .sign {
-    width: 20px;
-}
-
-td {
-    height: 35px;
-    padding: 5px;
+  width: 20px;
 }
 
 .hide {
-    display: none;
+  display: none;
+  font-size: 50px;
+  margin: auto;
+  text-align: center;
+}
+
+.hidden-divs {
+  background-color: white;
+  border-radius: 5px;
+  color: #192f92;
+  text-align: center;
 }
