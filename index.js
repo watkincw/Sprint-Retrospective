@@ -31,19 +31,31 @@ function checkNumber() {
     // target the 'Correct' answer message
     let hidden = document.getElementById("hiddenCorrect");
 
-    // un-hide it
-    hidden.classList.remove("hide");
-
-    // after 3 seconds, re-hide it
-    setTimeout(function () {
-      hidden.classList.add("hide");
-    }, 3000);
-
     // increment the guess counter
     counter++;
 
     // display new guess count
-    document.getElementById("counter").innerHTML = counter;
+    document.getElementById('counter').innerHTML = counter;
+
+    // reset counter value, not updating the value on the page yet
+    counter = 0;
+
+    // un-hide it
+    hidden.classList.remove("hide");
+
+        // Tell the user they guessed the correct number and reset counter after 3 seconds
+        setTimeout(function() {
+        // display correct answer message
+        hidden.classList.add('hide');
+
+        // update the displayed count value on the page
+        document.getElementById('counter').innerHTML = counter;
+
+        // clear input value
+        document.getElementById('guessedNumber').value = '';
+    }, 3000);
+
+    // generates a new random number for the next game
     luckyNumber = getRandomInt();
 
     // if the input number is NOT the lucky number
